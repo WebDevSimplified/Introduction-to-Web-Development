@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Booter - Zero Zero.woff2") format("woff2"),
+         url("Booter - Zero Zero.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-image: url("Images/Header Background.jpg");
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    margin: 0;
+    padding: .8em;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%; 
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-family: "Booter - Zero Zero";
+    color: white;
+    font-weight: normal;
+}
+
+.band-name-large {
+    font-size: 9em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    color: #777;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.main-footer {
+    padding: .5em 5%;
+    background-color: #56CCF2;
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav li {
+    padding: 0 8%;
+    height: auto;
+}
