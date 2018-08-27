@@ -68,7 +68,7 @@ html, body {
 .band-name {
     text-align: center;
     margin: 0;
-    font-size: 5em;
+    font-size: 4em;
     font-family: "Booter - Zero Zero";
     color: white;
     font-weight: normal;
@@ -105,7 +105,7 @@ html, body {
 }
 
 .main-footer {
-    padding: .5em 5%;
+    padding: .25em 0;
     background-color: #56CCF2;
     color: white;
 }
@@ -124,4 +124,9 @@ html, body {
 .footer-nav li {
     padding: 0 .5em;
     height: auto;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
 }
