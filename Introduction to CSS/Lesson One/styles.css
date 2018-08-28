@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
 @font-face {
     font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff2") format("woff2"),
-         url("Fonts/Booter - Zero Zero.woff") format("woff");
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -20,19 +20,6 @@ html, body {
     padding: 0;
 }
 
-.main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
-    background-image: url("Images/Header Background.jpg");
-    background-size: cover;
-    padding-bottom: 30px;
-}
-
-.nav {
-    padding: 0;
-    margin: 0;
-}
-
 .nav ul {
     margin: 0;
 }
@@ -42,27 +29,33 @@ html, body {
 }
 
 .nav a {
-    /* Inline elements cannot have padding/margin on the top or bottom so the element must be inline-block */
     display: inline-block;
     padding: .5em;
     color: white;
     text-decoration: none;
 }
 
-.nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
-}
-
 .main-nav {
-    width: 100%;
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgb(255, 255, 255, .3)
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
 .main-nav li {
     padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
 }
 
 .band-name {
@@ -70,20 +63,12 @@ html, body {
     margin: 0;
     font-size: 4em;
     font-family: "Booter - Zero Zero";
-    color: white;
     font-weight: normal;
+    color: white;
 }
 
 .band-name-large {
-    font-size: 9em;
-}
-
-.section-header {
-    font-family: "Metal Mania";
-    font-size: 2.5em;
-    font-weight: normal;
-    color: #333;
-    text-align: center;
+    font-size: 8em;
 }
 
 .content-section {
@@ -95,24 +80,30 @@ html, body {
     margin: 0 auto;
     padding: 0 1.5em;
 }
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
 
 .about-band-image {
     float: left;
+    height: 200px;
+    width: 200px;
     margin: 15px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
 }
 
 .main-footer {
-    padding: .25em 0;
     background-color: #56CCF2;
     color: white;
+    padding: .25em 0;
 }
 
 .main-footer-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -123,7 +114,6 @@ html, body {
 
 .footer-nav li {
     padding: 0 .5em;
-    height: auto;
 }
 
 .footer-nav img {
