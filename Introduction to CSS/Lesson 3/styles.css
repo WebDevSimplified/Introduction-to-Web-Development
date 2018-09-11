@@ -170,6 +170,18 @@ html, body {
     background-color: #2D9CDB;
 }
 
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
 .tour-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
@@ -210,18 +222,21 @@ html, body {
 }
 
 .shop-item {
-    margin: 10px;
-    margin-bottom: 50px;
+    margin: 30px;
 }
 
 .shop-item-title {
     display: block;
     width: 100%;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #333;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
 }
 
 .shop-item-details {
@@ -233,11 +248,7 @@ html, body {
 .shop-item-price {
     flex-grow: 1;
     color: #333;
-    font-size: 1.5em;
-}
-
-.shop-item-button {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .cart-header {
@@ -263,24 +274,69 @@ html, body {
     align-items: center;
     margin-right: 1.5em;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     border-bottom: 1px solid black;
 }
 
 .cart-item {
-    width: 40%;
+    width: 45%;
 }
 
 .cart-price {
     width: 20%;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .cart-quantity {
-    width: 40%;
+    width: 35%;
 }
 
 .cart-item-title {
     color: #333;
     margin-left: .5em;
     font-size: 1.2em;
+}
+
+.cart-item-image {
+    border-radius: 10px;
+    width: 75px;
+    height: auto;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    width: 50px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.cart-total-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
 }
