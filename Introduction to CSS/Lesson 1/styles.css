@@ -25,7 +25,7 @@ html, body {
 }
 
 .nav li {
-    display: inline;
+    display: flex;
 }
 
 .nav a {
