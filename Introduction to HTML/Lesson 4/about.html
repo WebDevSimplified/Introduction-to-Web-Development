@@ -3,18 +3,45 @@
     <head>
         <title>The Generics | About</title>
         <meta name="description" content="This is the description">
+        <style type="text/css" media="screen">
+        .main-container{   
+            width: 100%;
+}
+.flex-container{
+    display:flex;
+    height:80px;
+    background-color:black;
+    width:100%;
+}
+.menu{
+    min-width:300px;
+    color: white;
+    padding-top: 30px;
+    text-align:center;
+    font-size: 1.5em;
+}
+.footer-container{
+                display:flex;
+                height:60px;
+                background-color:#DCDCDC;
+            }
+            .resource{
+                min-width:100px;
+                padding-top: 10px;
+                text-align:center;
+            }
+</style>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <h1>The Generics</h1>
+            <div class="main-container">
+                <div class="flex-container">
+                <div class="menu"><a href="index.html">HOME</a></div>
+                <div class="menu"><a href="about.html">ABOUT</a></div>
+                <div class="menu"><a href="store.html">STORE</a></div>
+            </div>
+
+            <h1><center>The Generics</center></h1>
         </header>
 
         <section>
@@ -26,23 +53,24 @@
         
         <footer>
             <h3>The Generics</h3>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com" target="_blank">
+            <div class="main-container">
+                <div class="footer-container">
+                    <div class="resource"><a href="https://www.youtube.com" target="_blank">
                         <img src="Images/YouTube Logo.png">
                     </a>
-                </li>
-                <li>
-                    <a href="https://www.spotify.com" target="_blank">
-                        <img src="Images/Spotify Logo.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="Images/Facebook Logo.png">
-                    </a>
-                </li>
-            </ul>
+                    </div>
+                    <div class="resource">
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </div>
+                    <div class="resource">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
