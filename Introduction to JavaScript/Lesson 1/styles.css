@@ -52,6 +52,7 @@ html, body {
 }
 
 .main-header {
+
     background-color: rgba(0, 0, 0, .6);
     background-image: url("Images/Header Background.jpg");
     background-blend-mode: multiply;
@@ -75,7 +76,15 @@ html, body {
 .content-section {
     margin: 1em;
 }
-
+#new-navii{
+    padding: 8px;
+    background-color: #EB5757;
+    position:sticky;
+    top: 0%;
+}
+#n1:hover{
+    color: aqua;
+}
 .container {
     max-width: 900px;
     margin: 0 auto;
