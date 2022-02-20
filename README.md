@@ -1,5 +1,7 @@
 Using this project for demo
 
+HELLO, WORLD
+
 # Introduction to Web Development
 
 This repository contains all of the code for each individual lesson and is broken into three sections. HTML, CSS, and Javascript. Each section contains a folder for each lesson that contains all the code for the project as of the end of that lesson.
