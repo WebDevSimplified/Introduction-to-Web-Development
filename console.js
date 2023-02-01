@@ -5,3 +5,5 @@ function main(){
   return null;
 }
  main();
+let new=1;
+console.log(new);
