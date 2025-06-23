@@ -324,7 +324,7 @@ html, body {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: #000;
     margin-right: 20px;
 }
 
