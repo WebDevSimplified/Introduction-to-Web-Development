@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics - Login</title>
+        <meta name="description" content="Login to The Generics website">
+        
+        <link rel="stylesheet" href="styles.css" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <style>
+            .login-container * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .login-body-wrapper {
+                font-family: 'Poppins', sans-serif;
+                /* Beautiful gradient background */
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #333;
+                /* Add padding to give space from the header/footer */
+                padding: 5rem 0;
+            }
+
+            /* --- Login Form Styling --- */
+            .login-container {
+                width: 90%;
+                max-width: 420px;
+                margin: 20px;
+            }
+
+            .login-form {
+                /* The "frosted glass" effect */
+                background: rgba(255, 255, 255, 0.95);
+                padding: 2.5rem;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                text-align: center;
+            }
+
+            .login-form h2 {
+                font-weight: 600;
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+
+            .login-form p {
+                font-size: 0.9rem;
+                color: #666;
+                margin-bottom: 2rem;
+            }
+
+            /* --- Input Fields --- */
+            .input-group {
+                position: relative;
+                margin-bottom: 1.5rem;
+                text-align: left;
+            }
+
+            .input-group label {
+                display: block;
+                font-size: 0.85rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                color: #555;
+            }
+
+            .input-group input {
+                width: 100%;
+                padding: 12px 15px;
+                /* Add padding on the right for the icon */
+                padding-right: 45px; 
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-family: 'Poppins', sans-serif;
+                transition: border-color 0.3s, box-shadow 0.3s;
+            }
+
+            /* Handle username field differently (no icon) */
+            .input-group input[type="text"] {
+                padding-right: 15px;
+            }
+
+            /* Input focus effect */
+            .input-group input:focus {
+                outline: none;
+                border-color: #667eea;
+                box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            }
+
+            /* --- Password Toggle Icon --- */
+            .password-toggle-icon {
+                position: absolute;
+                top: 70%; /* Aligns with the input box, not the label */
+                right: 15px;
+                transform: translateY(-50%);
+                color: #aaa;
+                cursor: pointer;
+                transition: color 0.2s;
+            }
+
+            .password-toggle-icon:hover {
+                color: #667eea;
+            }
+
+            /* --- Login Button --- */
+            .login-button {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                /* Match the background gradient */
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                margin-top: 1rem;
+            }
+
+            .login-button:hover {
+                opacity: 0.85;
+            }
+
+            /* --- Bottom Links --- */
+            .form-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            .form-links a {
+                color: #667eea;
+                text-decoration: none;
+            }
+
+            .form-links a:hover {
+                text-decoration: underline;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Generics</h1>
+            </header>
+
+        <main class="login-body-wrapper">
+            <div class="login-container">
+                <form class="login-form" id="login-form">
+                    <h2>Site Login</h2>
+                    <p>Please log in to your account</p>
+                    
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <i class="fas fa-eye password-toggle-icon" id="togglePassword"></i>
+                    </div>
+                    
+                    <button type="submit" class="login-button">Login</button>
+                    
+                    <div class="form-links">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                const passwordInput = document.getElementById('password');
+                const togglePasswordIcon = document.getElementById('togglePassword');
+
+                // Check if the elements exist before adding listener
+                if (passwordInput && togglePasswordIcon) {
+                    togglePasswordIcon.addEventListener('click', function() {
+                        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                        passwordInput.setAttribute('type', type);
+                        
+                        this.classList.toggle('fa-eye');
+                        this.classList.toggle('fa-eye-slash');
+                    });
+                }
+    
+                const loginForm = document.getElementById('login-form');
+                if (loginForm) {
+                    loginForm.addEventListener('submit', function(event) {
+                        event.preventDefault(); 
+                        const username = document.getElementById('username').value;
+                        alert('Login attempt for user: ' + username + '\n(This is a demo, the form did not submit)');
+                    });
+                }
+            });
+        </script>
+
+    </body>
+</html>
